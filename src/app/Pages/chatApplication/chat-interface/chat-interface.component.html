@@ -1,0 +1,22 @@
+<table class="table">
+        <thead>
+          <tr>
+            <th scope="col"> <strong>#</strong></th>
+            <th scope="col">NAME</th>
+        
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let User of Users;index as i">
+            <!-- <input type="hidden" name="hidden" id="ID" value="User.Id"> -->
+            <th  scope="row">{{User.Id}}</th>
+            <td>{{User.FirstName}}</td>
+            <td>{{User.Email}}</td>
+            
+           
+          <td ><button class="btn btn-primary" (click)="onSelect(User)">Select</button></td>
+          </tr>
+  
+  
+        </tbody>
+      </table>
